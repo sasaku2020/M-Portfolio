@@ -2,22 +2,18 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-image: linear-gradient(120deg, #02dfff, #00beff, #0099ff, #006eff, #0032e3);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 300;   
+    
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
 }
 
