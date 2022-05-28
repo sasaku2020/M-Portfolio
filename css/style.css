@@ -30,13 +30,11 @@
 .navbar {
     display: flex;
     font-weight: 500;
-    z-index: 5;
 }
 
 #logo {
     color: #0A5ED7;
     font-weight: 700;
-    margin-right: 50vw;
 }
 
 .navbar-brand a:hover,
@@ -46,9 +44,11 @@
 #navbarSupportedContent a:visited {
     color: #0A5ED7;
 }
-
+#navbarSupportedContent{
+    margin-left: 39vw;
+}
 #navbarSupportedContent a:link {
-    margin: 0 1.5rem;
+    margin: 0 0 0 2.5rem;
     font-size: 1.1rem;
 }
 
