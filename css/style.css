@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 .container {
     margin: 0 auto;
@@ -33,10 +34,9 @@ body {
 }
 
 #logo {
-    color: #0984e3;
+    color: #0A5ED7;
     font-weight: 700;
     margin-right: 50vw;
-    transform: uppercase;
 }
 
 .navbar-brand a:hover,
@@ -44,7 +44,7 @@ body {
 .navbar-brand a:active,
 #navbarSupportedContent a:active,
 #navbarSupportedContent a:visited {
-    color: #0984e3;
+    color: #0A5ED7;
 }
 
 #navbarSupportedContent a:link {
@@ -53,7 +53,7 @@ body {
 }
 
 #navbarSupportedContent a:hover {
-    color: #8e44ad;
+    color: #8d44adc4;
 }
 
 
@@ -66,10 +66,75 @@ body {
 /**************** Main ****************/
 
 .main-section {
-    height: 95vh;
+    height: 100vh;
     z-index: 0;
     background-color: #000015;
     color: #fff;
+    background-attachment: fixed;
 }
 
-.fa-brands {}
+.hero{
+    position: relative;
+    top: 25%;
+    padding: 0;
+    
+}
+.lead,
+.display-6 {
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+.display-6 {
+    font-size: 1.7rem;
+}
+.career{
+    font-size: 3rem;
+    font-weight: 500;
+    color:#4C92F4;
+    letter-spacing: 2px;
+    word-spacing: .2rem;
+    margin: 1rem 0;
+}
+.view-work{
+    margin: 1rem 0;
+    padding: .7rem 2.3rem;
+    border-radius: 15px;
+    background-color: #0B3EF0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+.view-work:hover{
+    color: white;
+    background-color: #0b3df0a8;
+    transform: scale(1.1);
+}
+
+.media-links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.media-links li,
+.hero-link:active,
+.hero-link:visited{
+    margin: 1.5rem 2.7rem 0 0;
+    font-size: 1.6rem;
+    color: white;
+}
+.hero-link{
+    color: #fff;
+    transition: all .7s ease;
+}
+.hero-link:hover
+{
+    color: #4C92F4;
+    margin: 1.5rem 2.7rem 0 0;
+}
