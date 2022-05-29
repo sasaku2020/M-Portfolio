@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    
 }
-
 
 .container {
     margin: 0 auto;
@@ -44,9 +40,11 @@
 #navbarSupportedContent a:visited {
     color: #0A5ED7;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent {
     margin-left: 39vw;
 }
+
 #navbarSupportedContent a:link {
     margin: 0 0 0 2.5rem;
     font-size: 1.1rem;
@@ -65,6 +63,9 @@
 
 /**************** Main ****************/
 
+
+/**************** MAIN SECTION ****************/
+
 .main-section {
     height: 100vh;
     z-index: 0;
@@ -73,12 +74,12 @@
     background-attachment: fixed;
 }
 
-.hero{
+.hero {
     position: relative;
     top: 25%;
     padding: 0;
-    
 }
+
 .lead,
 .display-6 {
     font-weight: 500;
@@ -86,18 +87,21 @@
     letter-spacing: 1.5px;
     word-spacing: 2px;
 }
+
 .display-6 {
     font-size: 1.7rem;
 }
-.career{
-    font-size: 3rem;
-    font-weight: 500;
-    color:#4C92F4;
+
+.career {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #4C92F4;
     letter-spacing: 2px;
     word-spacing: .2rem;
     margin: 1rem 0;
 }
-.view-work{
+
+.view-work {
     margin: 1rem 0;
     padding: .7rem 2.3rem;
     border-radius: 15px;
@@ -110,13 +114,14 @@
     cursor: pointer;
     transition: all .7s ease;
 }
-.view-work:hover{
+
+.view-work:hover {
     color: white;
     background-color: #0b3df0a8;
     transform: scale(1.1);
 }
 
-.media-links{
+.media-links {
     list-style: none;
     display: flex;
     padding: 0;
@@ -124,17 +129,84 @@
 
 .media-links li,
 .hero-link:active,
-.hero-link:visited{
+.hero-link:visited {
     margin: 1.5rem 2.7rem 0 0;
     font-size: 1.6rem;
     color: white;
 }
-.hero-link{
+
+.hero-link {
     color: #fff;
     transition: all .7s ease;
 }
-.hero-link:hover
-{
+
+.hero-link:hover {
     color: #4C92F4;
     margin: 1.5rem 2.7rem 0 0;
 }
+
+
+/**************** END OF MAIN SECTION ****************/
+
+
+/**************** SECOND SECTION ****************/
+
+.second-section {
+    height: 90vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-section-h {
+    margin: 5rem auto;
+    font-weight: 700;
+    color: #0B3EF0;
+}
+
+.card {
+    margin: 0 2rem 2rem 2rem;
+    border: none;
+    max-width: 20rem;
+    max-height: 28rem;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all .7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 4;
+}
+
+.card-icons {
+    font-size: 10vh;
+    margin: 2rem auto;
+    text-align: center;
+    color: #0B3EF0;
+}
+
+
+/**************** END OF SECOND SECTION ****************/
+
+
+/**************** END OF MAIN ****************/
