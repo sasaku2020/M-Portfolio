@@ -72,11 +72,9 @@
 
 .main-section {
     height: 100vh;
-    z-index: 0;
     background-color: #000015;
     color: #fff;
     background-attachment: fixed;
-    z-index: 0;
 }
 
 .hero {
@@ -155,16 +153,47 @@
 /**************** END OF MAIN SECTION ****************/
 
 
-/**************** SECOND SECTION ****************/
+/**************** Grouped Selectors ****************/
 
-.second-section {
-    height: 80vh;
-    background-color: #FFFFFF;
+.second-section,
+.third-section,
+.forth-section {
+    min-height: 70vh;
+    max-height: 140vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    z-index: 2;
+}
+
+.second-section-h,
+.third-section-h,
+.forth-section-h {
+    margin: -5rem 0 5rem;
+    font-weight: 700;
+    color: #0B3EF0;
+}
+
+.card {
+    margin: 1rem;
+    border: none;
+    min-width: 20rem;
+    max-width: 22rem;
+    max-height: 24rem;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 0 0 .3rem;
+    transition: all .6s ease;
+}
+
+
+/**************** End of Grouped Selectors ****************/
+
+
+/**************** SECOND SECTION ****************/
+
+.second-section {
+    background-color: #FFFFFF;
 }
 
 .cards-container {
@@ -184,28 +213,9 @@
     flex-wrap: wrap;
 }
 
-.second-section-h {
-    margin: -2rem auto 5rem;
-    font-weight: 700;
-    color: #0B3EF0;
-}
-
-.card {
-    margin: 0 1rem;
-    border: none;
-    min-width: 22rem;
-    max-width: 25rem;
-    max-height: 28rem;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-    border-radius: 10px;
-    padding: 0 0 .5rem;
-    transition: all .7s ease;
-}
-
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .8;
-    z-index: 4;
 }
 
 .card-icons {
@@ -222,19 +232,7 @@
 /**************** Third SECTION ****************/
 
 .third-section {
-    height: 90vh;
     background-color: #000015;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-}
-
-.third-section-h {
-    margin: -5rem 0 5rem;
-    font-weight: 700;
-    color: #0B3EF0;
 }
 
 .card-img-top {
@@ -254,19 +252,7 @@
 /**************** Forth SECTION ****************/
 
 .forth-section {
-    height: 90vh;
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-}
-
-.forth-section-h {
-    margin: -5rem 0 5rem;
-    font-weight: 700;
-    color: #0B3EF0;
 }
 
 
@@ -318,20 +304,139 @@
 
 /**************** Media Querries ****************/
 
-@media (max-width:1023px) {
+@media (min-width:993px) and (max-width:1600) {}
+
+@media (max-width:992px) {
     body {
-        font-size: ;
+        font-size: 12px;
+    }
+    .container-fluid {
+        max-width: 100%;
+    }
+    .hero {
+        position: relative;
+        left: 15%;
+    }
+    #navbarSupportedContent {
+        margin: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .card-group-1,
+    .card-group-2,
+    .card-group-3 {
+        max-width: 80vw;
+        max-height: 150vh;
+        width: 20rem;
+        margin: 0;
+    }
+    .card {
+        width: 20rem;
+        padding: 0;
+        height: auto;
+        margin: 1rem 0;
+    }
+    .main-section,
+    .second-section,
+    .third-section,
+    .forth-section {
+        overflow: hidden;
+    }
+    .second-section-h,
+    .third-section-h,
+    .forth-section-h {
+        font-size: 2rem;
+        margin: 3rem;
+        font-weight: 700;
+        color: #0B3EF0;
     }
 }
 
-@media (max-width:641px) {
+@media (max-width:768px) {
     body {
-        font-size: ;
+        font-size: 12px;
+    }
+    .container-fluid {
+        max-width: 100%;
+    }
+    .hero {
+        position: relative;
+        left: 15%;
+    }
+    #navbarSupportedContent {
+        margin: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .card-group-1,
+    .card-group-2,
+    .card-group-3 {
+        max-width: 80vw;
+        max-height: 150vh;
+        width: 20rem;
+        margin: 0;
+    }
+    .card {
+        width: 20rem;
+        padding: 0;
+        height: auto;
+        margin: 1rem 0;
+    }
+    .main-section,
+    .second-section,
+    .third-section,
+    .forth-section {
+        overflow: hidden;
+    }
+    .second-section-h,
+    .third-section-h,
+    .forth-section-h {
+        font-size: 2rem;
+        margin: 3rem;
+        font-weight: 700;
+        color: #0B3EF0;
     }
 }
 
-@media (max-width:300px) {
+@media (max-width:575px) {
     body {
-        font-size: ;
+        font-size: 12px;
+    }
+    .container-fluid {
+        max-width: 100%;
+    }
+    .hero {
+        position: relative;
+        left: 15%;
+    }
+    #navbarSupportedContent {
+        margin: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .card-group-1,
+    .card-group-2,
+    .card-group-3 {
+        max-width: 80vw;
+        max-height: 150vh;
+        width: 20rem;
+        margin: 0;
+    }
+    .card {
+        width: 20rem;
+        padding: 0;
+        height: auto;
+        margin: 1rem 0;
+    }
+    .main-section,
+    .second-section,
+    .third-section,
+    .forth-section {
+        overflow: hidden;
+    }
+    .second-section-h,
+    .third-section-h,
+    .forth-section-h {
+        font-size: 2rem;
+        margin: 3rem;
+        font-weight: 700;
+        color: #0B3EF0;
     }
 }
