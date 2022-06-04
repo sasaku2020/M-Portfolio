@@ -298,6 +298,25 @@
     margin: 0 1rem;
 }
 
+.time {
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+}
+
+.time img {
+    width: auto;
+    height: 10vh;
+    transition: all 1s ease;
+    z-index: 1;
+}
+
+.time img:hover {
+    width: auto;
+    height: 70vh;
+    z-index: 5;
+}
+
 
 /**************** END OF Footer ****************/
 
